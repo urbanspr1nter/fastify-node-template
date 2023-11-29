@@ -1,0 +1,32 @@
+{
+    "name": "fastify-node-template",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "fastify nodejs template with TypeScript and other goodies",
+    "main": "./src/server.js",
+    "scripts": {
+        "start:prod": "node --experimental-specifier-resolution=node ./dist/src/server.js",
+        "start": "node --experimental-specifier-resolution=node --loader ts-node/esm ./src/server.ts",
+        "build:clean": "yarn clean && yarn install && yarn build",
+        "build": "tsc",
+        "clean": "rimraf node_modules",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Roger Ngo",
+    "license": "ISC",
+    "dependencies": {
+        "@fastify/cors": "^8.4.1",
+        "dotenv": "^16.3.1",
+        "fastify": "^4.24.3",
+        "sanitize-html": "^2.11.0",
+        "sequelize": "^6.35.1",
+        "sqlite3": "^5.1.6"
+    },
+    "devDependencies": {
+        "@types/node": "^20.10.0",
+        "@types/sanitize-html": "^2.9.5",
+        "rimraf": "^5.0.5",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.3.2"
+    }
+}

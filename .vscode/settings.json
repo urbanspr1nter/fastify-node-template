@@ -1,0 +1,12 @@
+{
+    "editor.fontFamily": "MonoLisa Variable",
+    "editor.fontLigatures": true,
+    "workbench.editor.pinnedTabsOnSeparateRow": true,
+    "explorer.excludeGitIgnore": true,
+    "files.eol": "\n",
+    "editor.minimap.autohide": true,
+    "workbench.editor.wrapTabs": true,
+    "workbench.editor.tabSizing": "fit",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
